@@ -1,10 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Veículos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-$END$
+<h1>CRUD de Veículos</h1>
+
+<h2>Adicionar Novo Veículo</h2>
+<form id="add-veiculo-form">
+    <input type="hidden" id="id" value="null">
+    <label for="locadora">Locadora:</label>
+    <input type="text" id="locadora" required>
+    <label for="modelo">Modelo:</label>
+    <input type="text" id="modelo" required>
+    <label for="marca">Marca:</label>
+    <input type="text" id="marca" required>
+    <label for="ano">Ano:</label>
+    <input type="number" id="ano" required>
+    <label for="motor">Motor:</label>
+    <input type="text" id="motor" required>
+    <label for="portas">Portas:</label>
+    <input type="number" id="portas" required>
+    <label for="cambio">Câmbio:</label>
+    <input type="text" id="cambio" required>
+    <label for="ar_condicionado">Ar Condicionado:</label>
+    <input type="checkbox" id="ar_condicionado">
+    <button id="form-btn" type="submit">Adicionar</button>
+</form>
+
+
+<button id="refresh-button">Atualizar Lista</button>
+<table>
+    <thead>
+    <tr>
+        <th>Locadora</th>
+        <th>Modelo</th>
+        <th>Marca</th>
+        <th>Ano</th>
+        <th>Motor</th>
+        <th>Portas</th>
+        <th>Câmbio</th>
+        <th>Ar Condicionado</th>
+        <th>Ações</th>
+    </tr>
+    </thead>
+    <tbody id="veiculos-list">
+
+    </tbody>
+</table>
+
+<script src="script.js"></script>
 </body>
 </html>
